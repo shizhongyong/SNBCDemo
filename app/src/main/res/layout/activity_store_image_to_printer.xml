@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/top_height"
+        android:background="@color/color_top" >
+
+        <TextView
+            android:id="@+id/tv_back_store_image_to_printer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/back_margin_left"
+            android:textSize="@dimen/back_fontsize"
+            android:text="@string/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/download_image"
+            android:textSize="@dimen/title_fontsize"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.6"
+                android:text="@string/image_file" />
+
+            <Spinner
+                android:id="@+id/sp_image_file"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.4"
+                android:text="@string/image_file" />
+        </LinearLayout>
+                <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.6"
+                android:text="@string/image_name" />
+
+            <EditText
+                android:id="@+id/et_image_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.4"
+                android:inputType="text"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="@string/store_position" />
+			<RadioGroup 
+			    android:id="@+id/rg_image_store_position"  
+			    android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                >
+			    <RadioButton 
+			        android:id="@+id/rb_image_store_ram"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:checked="true"
+			        android:text="@string/ram"/>
+			    <RadioButton 
+			        android:id="@+id/rb_image_store_flash"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="@string/flash"/>
+			</RadioGroup>
+
+        </LinearLayout>
+        <Button android:id="@+id/btn_download_image"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/download"
+            />
+        
+    </LinearLayout>
+
+</LinearLayout>

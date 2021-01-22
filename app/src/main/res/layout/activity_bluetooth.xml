@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.snbc.sdkexample.Activity_Bluetooth" >
+    
+       <LinearLayout
+        android:id="@+id/ALLLinearLayout_blue"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:orientation="vertical" >
+		
+			<Button
+				android:id="@+id/btnSearch_blue"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:text="Search(Bluetooth)" >
+			</Button>
+			
+			<Button
+				android:id="@+id/btnPrintSelf_blue"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:text="Print Self-checking Page(Bluetooth)" >
+			</Button>
+			
+			<Button
+				android:id="@+id/btnPrintLabel_blue"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:text="Print Label(Bluetooth)" >
+			</Button>
+			
+			<Button
+				android:id="@+id/btnQueryStatus_blue"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:text="Query Status(Bluetooth)" >
+			</Button>
+			
+			<Button
+				android:id="@+id/btnDownloadTTF_blue"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:text="DownloadTTF(Bluetooth)" >
+			</Button>
+			
+			<Button
+				android:id="@+id/btnGetFontFileName_blue"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:text="Get Font File Name(Bluetooth)" >
+			</Button>
+			
+			<Button
+				android:id="@+id/btnDownloadBMP_blue"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:text="Download BMP(Bluetooth)" >
+			</Button>
+			
+			<Button
+				android:id="@+id/btnGetImageFileName_blue"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:text="Get Image File Name(Bluetooth)" >
+			</Button>
+			
+			<Button
+				android:id="@+id/btnDownloadFormat_blue"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:text="Download Format(Bluetooth)" >
+			</Button>
+			
+			<Button
+				android:id="@+id/btnPrintFormat_blue"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:text="PrintFormat(Bluetooth)" >
+			</Button>
+			
+			<Button
+				android:id="@+id/btnGetFormatFileName_blue"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:text="Get Format File Name(Bluetooth)" >
+			</Button>
+			
+		</LinearLayout>
+
+</RelativeLayout>

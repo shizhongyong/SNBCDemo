@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.snbc.barcode.sdk.demo">
+
+    <application
+        android:name="com.snbc.demo.General.SNBCApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.snbc.demo.ConnectivityActivity"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="com.snbc.demo.PrinterConfigurationActivity"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="com.snbc.demo.DirectIOActivity"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="com.snbc.demo.PrintBarcodeActivity"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="com.snbc.demo.PrintGraphicsActivity"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity android:name="com.snbc.demo.PrintImageActivity"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="com.snbc.demo.PrintLabelActivity"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity android:name="com.snbc.demo.PrintLabelWithFormatActivity" >
+        </activity>
+        <activity
+            android:name="com.snbc.demo.PrintTextUseBuiltinFontActivity"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity android:name="com.snbc.demo.PrintTextUseCustomFontActivity" >
+        </activity>
+        <activity
+            android:name="com.snbc.demo.QueryFontNamesActivity"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="com.snbc.demo.QueryFormatNamesActivity"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="com.snbc.demo.QueryImageNamesActivity"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="com.snbc.demo.QueryPrinterStatusActivity"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="com.snbc.demo.DownloadFontActivity"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="com.snbc.demo.DownloadImageActivity"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="com.snbc.demo.DownloadFormatActivity"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="com.snbc.demo.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+    <!-- WIFIManage permission -->
+    <!-- Allows applications to access information about networks -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- Allows applications to access information about Wi-Fi networks -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <!-- Allows applications to change network connectivity state -->
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+    <!-- Allows applications to change network connectivity state -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <!-- Allows applications to enter Wi-Fi Multicast mode -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <!-- Internet permission -->
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+
+    <!-- If your application uses Wi-Fi, declare so with a <uses-feature> element in the manifest file -->
+    <uses-feature android:name="android.hardware.wifi" />
+
+    <!-- Bluetooth permission -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <!-- SDCard 权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+</manifest>

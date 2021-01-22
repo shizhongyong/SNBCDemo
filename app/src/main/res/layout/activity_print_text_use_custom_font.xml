@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/top_height"
+        android:background="@color/color_top"
+        >
+       <TextView 
+           android:id="@+id/tv_back_print_text_use_custom_font"
+           android:layout_alignParentLeft="true"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/back"
+           android:textSize="@dimen/back_fontsize"
+           android:layout_marginLeft="@dimen/back_margin_left"
+           android:layout_centerInParent="true"
+           />
+       <TextView 
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/print_with_custom_font"
+           android:textSize="@dimen/title_fontsize"
+           android:textStyle="bold"
+           android:gravity="center"
+           android:layout_centerInParent="true"
+           /> 
+        
+    </RelativeLayout>
+   
+	<LinearLayout android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:orientation="vertical">
+       <LinearLayout
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal" 
+           >
+           <TextView 
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:text="@string/select_font"
+               android:layout_gravity="center_vertical"
+               android:layout_weight="1"
+               />
+            <Spinner 
+	        android:id="@+id/sp_print_text_use_custom_font"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center_vertical"
+	        android:layout_weight="1"
+	        /> 
+       </LinearLayout>
+	
+	    <EditText
+	        android:id="@+id/et_print_text_use_custom_font"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:inputType="text"
+	        android:hint="@string/print_text_hint"
+	        />
+	    <Button 
+	        android:id="@+id/btn_print_text_use_custom_font"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@string/print"
+	        />
+	    
+	    
+	</LinearLayout>
+    
+</LinearLayout>

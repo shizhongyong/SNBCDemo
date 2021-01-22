@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">BarcodePrinte</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <!-- 通用文字 -->
+    <string name="back">Back</string>
+    <string name="print">Print</string>
+    <string name="query">Query</string>
+    <string name="download">Download</string>
+    <string name="connect_warn">Please connect to printer first in "Connectivity"</string>
+    <string name="print_default_text">snbc 002376</string>
+    <string name="print_default_text2">www.snbc.com</string>
+    <string name="send">Send</string>
+    <!--Main Page  -->
+    <string name="connect_printer">Connect Printer</string>
+    <string name="query_printer_status">Query Printer Status</string>
+    <string name="printe_file">Printe File</string>
+    <string name="stop_printe_file">Stop Print File</string>
+    <string name="read_file">Read File</string>
+    <string name="print_with_in_font">Print Text With The Built-in Font</string>
+    <string name="print_with_custom_font">Print Text With Custom Font</string>
+    <string name="print_barcode">Print Barcode</string>
+    <string name="print_graphics">Print Graphics</string>
+    <string name="print_image">Print Image</string>
+    <string name="print_label">Print Label</string>
+    <string name="print_label_with_format">Print Label With Format</string>
+     <string name="printer_configuration">Printer Configuration</string>
+    <string name="download_image">Download Image</string>
+    <string name="download_font">Download Font</string>
+    <string name="download_format">Download Format</string>
+    <string name="query_fonts">Query Fonts</string>
+    <string name="query_images">Query Images</string>
+    <string name="query_formats">Query Formats</string> 
+    <string name="direct_io">Direct IO</string>
+    
+    <!--Connect Printer Page  -->
+    <string name="wifi_tag">WIFI</string>
+    <string name="bluetooth_tag">Bluetooth</string>
+    <string name="usb_tag">USB</string>
+    <string name="com_tag">COM</string>
+    <string name="ble_tag">Bluetooth(BLE)</string>
+    <string name="mfi_tag">Bluetooth(MFI)</string>
+    <string name="net_tag">NET</string>
+    <string name="wifi_discover">Discover</string>
+    <string name="net_discover">Discover</string>
+    <string name="ble_discover">Discover</string>
+    <string name="mfi_discover">Discover</string>
+    <string name="port_number">Port Number</string>
+    <string name="instrution_set">Instruction set</string>
+    <string name="connect">Connect</string>
+    <string name="disconnect">Disconnect</string>
+    
+    <!--Print Text With The Built-in Font Page -->
+    <string name="select_font">Select Font</string>
+    <string name="print_text_hint">please input text to print</string>
+    
+    <string name="barcode_type">Barcode Type</string>
+    <!--Print Image  -->
+    <string name="image">Image</string>
+    <string name="image_stored_on_printer">Image(stored on printer)</string>
+    <string name="select_image">Select Image</string>
+    
+    <!--Print Label With Format  -->
+	<string name="format_name">Format Name</string>
+	<!--Printer Configuration  -->
+	<string name="print_speed">Print Speed(inch/s)</string>
+	<string name="print_density">Print Density</string>
+	<string name="print_direction">Print Direction</string>
+	<string name="print_mode">Print Mode</string>
+	<string name="print_method">Print Method</string>
+	<string name="paper_type">Paper Type</string>
+	<string name="print_name">Print Name:</string>
+	<string name="firmware_version">Firmware Version:</string>
+	<string name="print_resolution">Print Resolution:</string>
+    <string name="read_from_printer">Read From Printer</string>
+    <string name="update_to_printer">Update To Printer</string>
+    <string name="delete_file">Delete File</string>
+    <string name="prompt_delete_file">Select File and Delete</string>
+    <string name="format_flash">Format Flash</string>
+    <!--Download Image  -->
+    <string name="image_file">Image File</string>
+    <string name="image_name">Image Name</string>
+    <!--Download Font  -->
+	<string name="font_file">Font File</string>
+    <string name="font_name">Font Name</string>
+    <string name="store_position">Stored Position</string>
+   	<string name="ram">Ram</string>
+   	<string name="flash">Flash</string>
+   	<!--Download Format  -->
+   	<string name="format_file">Format File</string>
+   	<!--hint  Print Status-->
+	<string name="hint_ready_to_print">Ready to print:</string>
+	<string name="hint_paused">Paused:</string>
+	<string name="hint_paper_out">Paper out:</string>
+	<string name="hint_head_too_hot">Head too hot:</string>
+	<string name="hint_head_opened">Head opened:</string>
+	<string name="hint_ribbon_out">Ribbon out:</string>
+	<string name="hint_print_sequence">Print Sequence:</string>
+	<string name="hint_query_status_failed">Query status failed.</string>
+	
+	<string name="hint_to_print_null">Please input text first </string>
+	<string name="hint_download_success">Download success</string>
+	
+	<string name="default_send_BPLZ">~WC\r\n</string>
+	<string name="default_send_BPLE">U\r\n</string>
+	<string name="default_send_BPLT">SELFTEST\r\n</string>
+	<string name="default_send_BPLC">! U1 PRN-CONFIG-LIST\r\n</string>
+	<string name="default_send_BPLA">Z\r\n</string>
+	<string name="label">Label</string>
+</resources>

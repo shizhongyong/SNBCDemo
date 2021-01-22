@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/top_height"
+        android:background="@color/color_top" >
+
+        <TextView
+            android:id="@+id/tv_back_connectivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/back_margin_left"
+            android:textSize="@dimen/back_fontsize"
+            android:text="@string/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/connect_printer"
+            android:textSize="@dimen/title_fontsize"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <TabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" >
+
+                <LinearLayout
+                    android:id="@+id/widget_layout_wifi"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <Button
+                        android:id="@+id/btn_wifi_discover"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/wifi_discover" >
+                    </Button>
+
+                    <ListView
+                        android:id="@+id/lv_wifi_result"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/common_margin_top" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_wifi_info"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="@dimen/common_margin_top"
+                        android:orientation="vertical"
+                        android:visibility="gone" >
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/port_number" />
+
+                            <EditText
+                                android:id="@+id/et_port_number"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:inputType="number" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/instrution_set" />
+
+                            <Spinner
+                                android:id="@+id/sp_wifi_instrution_set"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/btn_connect_wifi"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/connect" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/widget_layout_bluetooth"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <Button
+                        android:id="@+id/btn_bluetooth_discover"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ble_discover" />
+
+                    <ListView
+                        android:id="@+id/lv_bluetooth_result"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/common_margin_top" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_bluetooth_info"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="@dimen/common_margin_top"
+                        android:orientation="vertical" 
+                        android:visibility="gone"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/instrution_set" />
+
+                            <Spinner
+                                android:id="@+id/sp_bluetooth_instrution_set"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/btn_connect_bluetooth"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/connect" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/widget_layout_usb"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/instrution_set" />
+
+                        <Spinner
+                            android:id="@+id/sp_usb_instrution_set"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btn_usb_connect"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/connect" >
+                    </Button>
+                </LinearLayout>
+                      <LinearLayout
+                    android:id="@+id/widget_layout_com"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+                    
+                    <TableLayout android:layout_width="match_parent"
+				                 android:layout_height="match_parent" 
+				                 android:orientation="vertical">
+                     
+
+						<TableRow>
+							<TextView android:id="@+id/com_txt1" 
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" 
+								android:layout_marginLeft="10dip"
+								android:textSize="17dp" 
+								android:text="Port Name：" 
+								android:singleLine="true" />
+							<AutoCompleteTextView android:id="@+id/com_port"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" 
+								android:text="/dev/ttymxc4" 
+								android:singleLine="true" />
+						</TableRow>
+						<TableRow>
+							<TextView android:id="@+id/com_txt2"
+	                            android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" 
+								android:layout_marginLeft="10dip"
+								android:textSize="17dp" 
+								android:text="BaudRate：" 
+								android:singleLine="true" />
+		
+							<Spinner
+							    android:id="@+id/com_baudrate_spi"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
+
+		
+						</TableRow>
+						<TableRow>
+								<TextView
+	                            android:layout_width="0dp"
+	                            android:layout_height="wrap_content"
+	                            android:layout_weight="1"
+	                            android:text="@string/instrution_set" />
+	
+	                        <Spinner
+	                            android:id="@+id/sp_com_instrution_set"
+	                            android:layout_width="0dp"
+	                            android:layout_height="wrap_content"
+	                            android:layout_weight="1" />
+			
+						</TableRow>
+		                    <Button
+		                        android:id="@+id/btn_com_connect"
+		                        android:layout_width="fill_parent"
+		                        android:layout_height="wrap_content"
+		                        android:text="@string/connect" >
+		                    </Button>
+                    </TableLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/widget_layout_net"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <Button
+                        android:id="@+id/btn_net_discover"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/net_discover" >
+                    </Button>
+
+                    <ListView
+                        android:id="@+id/lv_net_result"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/common_margin_top" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_net_info"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="@dimen/common_margin_top"
+                        android:orientation="vertical"
+                        android:visibility="gone" >
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/port_number" />
+
+                            <EditText
+                                android:id="@+id/net_port_number"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:inputType="number" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/instrution_set" />
+
+                            <Spinner
+                                android:id="@+id/sp_net_instrution_set"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/btn_connect_net"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/connect" />   
+                    </LinearLayout>
+                  </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+</LinearLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/top_height"
+        android:background="@color/color_top" >
+
+        <TextView
+            android:id="@+id/tv_back_direct_io"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/back_margin_left"
+            android:textSize="@dimen/back_fontsize"
+            android:text="@string/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/direct_io"
+            android:textSize="@dimen/title_fontsize"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/et_to_send"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:singleLine="false"
+            android:scrollHorizontally="false"
+            android:gravity="top"
+            android:inputType="textMultiLine" />
+        
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btn_direct_io"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/send" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
