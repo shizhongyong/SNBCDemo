@@ -33,7 +33,7 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.AdapterView.OnItemSelectedListener;
 
-public class 	PrintTextUseBuiltinFontActivity extends Activity {
+public class PrintTextUseBuiltinFontActivity extends Activity {
 	private TextView tv_back_print_text_use_buildin_font;
 	private Spinner sp_print_text_use_buildin_font;
 	private EditText et_print_text_use_buildin_font;
@@ -145,7 +145,7 @@ public class 	PrintTextUseBuiltinFontActivity extends Activity {
 		/// \if English
 		/// \defgroup PRINT_TEXT_USE_BUILTIN_FONT_BPLA Print text use the built-in font(BPLA)
 		/// \elseif Chinese
-		/// \defgroup PRINT_TEXT_USE_BUILTIN_FONT_BPLA ʹ�����������ӡ�ı�(BPLA)
+		/// \defgroup PRINT_TEXT_USE_BUILTIN_FONT_BPLA 使用内置字体打印文本(BPLA)
 		/// \endif
 		/// \code
 		private void doPrintTextBPLA(String to_print, BarPrinter printer,ILabelEdit labelEdit) throws Exception {
@@ -170,7 +170,7 @@ public class 	PrintTextUseBuiltinFontActivity extends Activity {
 		/// \if English
 		/// \defgroup PRINT_TEXT_USE_BUILTIN_FONT_BPLT Print text use the built-in font(BPLT)
 		/// \elseif Chinese
-		/// \defgroup PRINT_TEXT_USE_BUILTIN_FONT_BPLT ʹ�����������ӡ�ı�(BPLT)
+		/// \defgroup PRINT_TEXT_USE_BUILTIN_FONT_BPLT 使用内置字体打印文本(BPLT)
 		/// \endif
 		/// \code
 		private void doPrintTextBPLT(String to_print, BarPrinter printer,ILabelEdit labelEdit) throws Exception{
@@ -204,7 +204,7 @@ public class 	PrintTextUseBuiltinFontActivity extends Activity {
 		/// \if English
 		/// \defgroup PRINT_TEXT_USE_BUILTIN_FONT_BPLC Print text use the built-in font(BPLC)
 		/// \elseif Chinese
-		/// \defgroup PRINT_TEXT_USE_BUILTIN_FONT_BPLC ʹ�����������ӡ�ı�(BPLC)
+		/// \defgroup PRINT_TEXT_USE_BUILTIN_FONT_BPLC 使用内置字体打印文本(BPLC)
 		/// \endif
 		/// \code
 		private void doPrintTextBPLC(String to_print, BarPrinter printer,ILabelEdit labelEdit) throws Exception {
@@ -262,7 +262,7 @@ public class 	PrintTextUseBuiltinFontActivity extends Activity {
 		/// \if English
 		/// \defgroup PRINT_TEXT_USE_BUILTIN_FONT_BPLE Print text use the built-in font(BPLE)
 		/// \elseif Chinese
-		/// \defgroup PRINT_TEXT_USE_BUILTIN_FONT_BPLE ʹ�����������ӡ�ı�(BPLE)
+		/// \defgroup PRINT_TEXT_USE_BUILTIN_FONT_BPLE 使用内置字体打印文本(BPLE)
 		/// \endif
 		/// \code
 		private void doPrintTextBPLE(String to_print, BarPrinter printer,ILabelEdit labelEdit) throws Exception {
@@ -287,7 +287,7 @@ public class 	PrintTextUseBuiltinFontActivity extends Activity {
 		/// \if English
 		/// \defgroup PRINT_TEXT_USE_BUILTIN_FONT_BPLZ Print text use the built-in font(BPLZ)
 		/// \elseif Chinese
-		/// \defgroup PRINT_TEXT_USE_BUILTIN_FONT_BPLZ ʹ�����������ӡ�ı�(BPLZ)
+		/// \defgroup PRINT_TEXT_USE_BUILTIN_FONT_BPLZ 使用内置字体打印文本(BPLZ)
 		/// \endif
 		/// \code
 		private void doPrintTextBPLZ(String to_print, BarPrinter printer,ILabelEdit labelEdit) throws Exception {
